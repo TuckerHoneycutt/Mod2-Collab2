@@ -1,4 +1,19 @@
-// Your code here
+class PartyPlanner{
+	constructor(guestList = []){
+		this.guestList = guestList;
+	}
+	addToGuestList(name){
+		this.guestList.push(name);
+	}
+	throwParty(){
+		if(this.guestList.length === 0){ // This is if there are no people coming to the party
+			return "Gotta add people to the guest list"
+		}else{//This is if there are 1 or more people coming to the party
+			return `Welcome to the party ${this.guestList.join(' and ')}`
+		}
+	}
+}
+
 
 
 /*****************************************************************************/
