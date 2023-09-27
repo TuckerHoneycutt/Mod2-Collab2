@@ -1,6 +1,6 @@
 class PartyPlanner{
-	constructor(guestList = []){
-		this.guestList = guestList;
+	constructor(){
+		this.guestList = [];// It instantiates it inside the class
 	}
 	addToGuestList(name){
 		this.guestList.push(name);
